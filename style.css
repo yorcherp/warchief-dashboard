@@ -1,11 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Metamorphous&family=Skranji:wght@400;700&display=swap');
 
+
+:root{
+
+--background:#d7d0c1;
+
+--sidebar:#611616;
+
+--header:#2d2926;
+
+--panel:#ece1c0;
+
+--card:#f6edd3;
+
+--gold:#d4af37;
+
+--gold-hover:#f1d26b;
+
+--border:#8b6a2b;
+
+--text:#292929;
+
+--light:#f8f2dd;
+
+--shadow:rgba(0,0,0,.25);
+}
 body {
     font-family: 'Metamorphous';
 }
 
 .sidebar {
-    background-color: #7b1e1e;
+    background-color: var(--sidebar);
     color: #f4e6c2;
     padding: 24px;
     display: grid;
@@ -116,4 +141,42 @@ header {
 .buttons button:hover {
     background-color: #b22a2a;
     transform: translateY(-3px);
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:24px;
+    margin-top:20px;
+}
+
+.card{
+    background:var(--clr-card);
+    border-left:8px solid var(--clr-gold);
+    border-radius:12px;
+    padding:22px;
+    box-shadow:0 6px 12px rgba(0,0,0,.15);
+    transition:all .25s ease;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 12px 24px rgba(0,0,0,.25);
+}
+
+.card h3{
+    font-family:"Cinzel", serif;
+    margin-bottom:15px;
+    color:#5b1b1b;
+}
+
+.card p{
+    line-height:1.5;
+    margin-bottom:20px;
+}
+
+.project-info{
+    display:grid;
+    gap:8px;
+    font-size:.9rem;
 }
