@@ -19,6 +19,12 @@ body {
     grid-template-columns: 48px 1fr;
     align-items: center;
     gap: 12px;
+    font-size: 1.8rem;
+}
+.sidebar h1 img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
 }
 .sidebar ul {
     list-style: none;
@@ -37,9 +43,77 @@ body {
 .sidebar li:hover {
     background-color: rgba(255,255,255,08);
     transform: translateX(6px);
+    color: black;
 }
 .separator {
     height: 2px;
     background-color: 255,255,255,.15;
     margin: 18px 0;
+}
+
+header {
+
+    display: grid;
+
+    grid-template-columns: 2fr 1fr;
+
+    grid-template-rows: auto auto;
+
+    gap: 20px;
+
+    padding: 20px 30px;
+
+    background: #2d2a24;
+
+    border-bottom: 3px solid #8b6a2b;
+
+}
+.search {
+
+    display: grid;
+
+    align-items: center;
+
+}
+.search input {
+    width: 100%;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 25px;
+    background: #efe6c7;
+    font-size: 1rem;
+}
+.profile {
+    display: grid;
+    grid-template-columns: 80px auto;
+    gap: 20px;
+    align-items: center;
+}
+
+.profile img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    border: 4px solid #d6b04d;
+    object-fit: cover;
+}
+.profile h2 {
+    color: #f5e7b5;
+
+}
+.profile p {
+    color: #c7b998;
+}
+.buttons button {
+    background: #8d1f1f;
+    color: #f5e7b5;
+    border: 2px solid #d6b04d;
+    border-radius: 8px;
+    padding: 12px;
+    cursor: pointer;
+    transition: .3s;
+}
+.buttons button:hover {
+    background-color: #b22a2a;
+    transform: translateY(-3px);
 }
