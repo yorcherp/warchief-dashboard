@@ -1,220 +1,326 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Warchief Command Board</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>The Great Hall Dashboard</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Metamorphous&family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/YOURKIT.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
     <div class="container">
-    <aside class="sidebar">
-        <h1>
-            <img src="./assets/HordeLogo.webp" alt="">
-            ⚒ Warchief Dashboard
-        </h1>
-    <nav>
-        <ul>
-            <li>🏠 Great Hall</li>
-            <li>👤 Warchief</li>
-            <li>📜 Orders</li>
-            <li>⚔ Military</li>
-            <li>🛠 Infrastructure</li>
-            <li>🦅 Flight Masters</li>
-            <li class="separator"></li>
-            <li>🌎 Diplomacy</li>
-            <li>⚡ Earthen Ring</li>
-            <li>💰 Treasury</li>
-        </ul>
-    </nav>
-    </aside>
+      <!-- ===========================
+            SIDEBAR
+    ============================ -->
 
-    <header>
+      <aside class="sidebar">
+        <div class="logo">
+          <img src="assets/horde-logo.png" alt="Horde Logo" />
 
-        <div class="search">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <input
-            type="text"
-            placeholder="Search Azeroth..."
-            >
+          <h1>Warchief Dashboard</h1>
         </div>
-        
+
+        <nav>
+          <ul>
+            <li>
+              <i class="fa-solid fa-house"></i>
+              <span>Great Hall</span>
+            </li>
+
+            <li>
+              <i class="fa-solid fa-user"></i>
+              <span>Warchief</span>
+            </li>
+
+            <li>
+              <i class="fa-solid fa-scroll"></i>
+              <span>Orders</span>
+            </li>
+
+            <li>
+              <i class="fa-solid fa-shield"></i>
+              <span>Military</span>
+            </li>
+
+            <li>
+              <i class="fa-solid fa-hammer"></i>
+              <span>Infrastructure</span>
+            </li>
+
+            <li>
+              <i class="fa-solid fa-dragon"></i>
+              <span>Flight Masters</span>
+            </li>
+          </ul>
+        </nav>
+
+        <nav>
+          <ul>
+            <li>
+              <i class="fa-solid fa-earth-americas"></i>
+              <span>Diplomacy</span>
+            </li>
+
+            <li>
+              <i class="fa-solid fa-bolt"></i>
+              <span>Earthen Ring</span>
+            </li>
+
+            <li>
+              <i class="fa-solid fa-coins"></i>
+              <span>Treasury</span>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- ===========================
+             HEADER
+    ============================ -->
+
+      <header class="header">
+        <div class="search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+
+          <input type="text" placeholder="Search Azeroth..." />
+        </div>
+
+        <div class="profile-small">
+          <img src="assets/thrall.png" alt="Thrall" />
+
+          <p>Thrall</p>
+        </div>
 
         <div class="profile">
-            <img src="./assets/Thrall_Wei.webp" alt="Thrall">
-            <div>
-                <h2>Thrall</h2>
-                <p>Warchief of the Horde</p>
-            </div>
+          <img src="assets/thrall.png" alt="Thrall" />
+
+          <div>
+            <p class="greeting">Greetings, Warchief.</p>
+
+            <h2>Thrall</h2>
+
+            <p class="subtitle">Warchief of the Horde</p>
+          </div>
         </div>
 
         <div class="buttons">
-            <button>Issue Order</button>
-            <button>Council</button>
-            <button>War Map</button>
+          <button>Issue Order</button>
+
+          <button>War Council</button>
+
+          <button>World Map</button>
         </div>
+      </header>
 
-    </header>
+      <!-- ===========================
+               MAIN
+    ============================ -->
 
-    <main>
+      <main class="main-content">
+        <!-- Projects -->
+
         <section class="projects">
-            <h2>Current Projects</h2>
+          <h2>Current Projects</h2>
 
-            <div class="cards">
-                <!-- Cards -->
-                <div class="card">
-                    <h3>🚢 Zeppelin Network</h3>
-                    <p>
-                    Build a permanent zeppelin route connecting
-                    Orgrimmar, Thunder Bluff and Undercity.
-                    </p>
+          <div class="cards">
+            <!-- Card 1 -->
 
-                    <div class="project-info">
-                        <span><strong>Status:</strong> 🟢 In Progress</span>
-                        <span><strong>Priority:</strong> High</span>
-                        <span><strong>Assigned:</strong> Goblin Engineers</span>
-                    </div>
-                </div>
-            <div class="card">
-                <h3>💧 Clean Water Initiative</h3>
-                <p>
-                Expand Orgrimmar's water supply using
-                shamanic engineering and new wells.
-                <p>
+            <article class="card">
+              <h3>🚢 Zeppelin Expansion</h3>
 
-                <div class="project-info">
-                    <span><strong>Status:</strong> 🟡 Planning</span>
-                    <span><strong>Priority:</strong> High</span>
-                    <span><strong>Assigned:</strong> Earthen Ring</span>
-                </div>
-            </div>
-            <div class="card">
-                <h3>🌳 Reforestation of Durotar</h3>
-                <p>
-                Plant drought-resistant vegetation around
-                Orgrimmar to reduce erosion.
-                </p>
+              <p>
+                Build a permanent zeppelin route connecting Orgrimmar and
+                Thunder Bluff.
+              </p>
 
-                <div class="project-info">
-                    <span><strong>Status:</strong> 🟢 Active</span>
-                    <span><strong>Priority:</strong> Medium</span>
-                    <span><strong>Assigned:</strong> Druids of the Horde</span>
-                </div>
-            </div>
-            <div class="card">
-                <h3>🛡 Barrens Defense</h3>
-                <p>
-                    Reinforce The Crossroads with towers
-                    and additional patrols.
-                </p>
-                
-                <div class="project-info">
-                    <span><strong>Status:</strong> 🔴 High Alert</span>
-                    <span><strong>Assigned:</strong> Kor'kron Guard</span>
-                    <span><strong>Priority:</strong> Critical</span>
-                </div>
-            </div>
-            <div class="card">
-                <h3>🏗 Valley of Wisdom Expansion</h3>
-                <p>
-                    Build new halls and training areas
-                    for Horde shamans.
-                </p>
-                
-                <div class="project-info">
-                    <span><strong>Status:</strong> 🟡 Under Construction</span>
-                    <span><strong>Priority:</strong> Medium</span>
-                    <span><strong>Assigned:</strong> Horde Builders</span>
-                </div>
-                
-            </div>
-            <div class="card">
-                <h3>🛶 Echo Isles Restoration</h3>
-                
-                <p>
-                    Help Vol'jin rebuild the Echo Isles
-                    after reclaiming Darkspear territory.
-                </p>
-                <div class="project-info">
-                    <span><strong>Status:</strong> ✅ Completed</span>
-                    <span><strong>Priority:</strong> Low</span>
-                    <span><strong>Assigned:</strong> Darkspear Tribe</span>
-                </div>        
-            </div>
-        </section>
-<aside class="right-panel">
+              <div class="project-info">
+                <span>🟢 Active</span>
 
-        <section class="announcements">
+                <span>Priority: High</span>
 
-          <h2>War Council</h2>
+                <span>Goblin Engineers</span>
+              </div>
+            </article>
 
-          <div class="announcement">
-            <h4>Cairne requests audience</h4>
-            <p>Discuss the future of Mulgore.</p>
+            <!-- Card 2 -->
+
+            <article class="card">
+              <h3>💧 Water Initiative</h3>
+
+              <p>Supply clean water to every district of Orgrimmar.</p>
+
+              <div class="project-info">
+                <span>🟡 Planning</span>
+
+                <span>Priority: High</span>
+
+                <span>Earthen Ring</span>
+              </div>
+            </article>
+
+            <!-- Card 3 -->
+
+            <article class="card">
+              <h3>🌳 Reforest Durotar</h3>
+
+              <p>Restore vegetation around the Valley of Wisdom.</p>
+
+              <div class="project-info">
+                <span>🟢 Active</span>
+
+                <span>Priority: Medium</span>
+
+                <span>Druids</span>
+              </div>
+            </article>
+
+            <!-- Card 4 -->
+
+            <article class="card">
+              <h3>🛡 Barrens Defense</h3>
+
+              <p>Reinforce southern defenses against Alliance incursions.</p>
+
+              <div class="project-info">
+                <span>🔴 Critical</span>
+
+                <span>Priority: Critical</span>
+
+                <span>Kor'kron Guard</span>
+              </div>
+            </article>
+
+            <!-- Card 5 -->
+
+            <article class="card">
+              <h3>🏗 Valley of Wisdom</h3>
+
+              <p>Expand shaman training facilities.</p>
+
+              <div class="project-info">
+                <span>🟡 Under Construction</span>
+
+                <span>Priority: Medium</span>
+
+                <span>Builders Guild</span>
+              </div>
+            </article>
+
+            <!-- Card 6 -->
+
+            <article class="card">
+              <h3>🛶 Echo Isles</h3>
+
+              <p>Help Vol'jin restore the Echo Isles.</p>
+
+              <div class="project-info">
+                <span>✅ Completed</span>
+
+                <span>Priority: Low</span>
+
+                <span>Darkspear Tribe</span>
+              </div>
+            </article>
           </div>
-
-          <div class="announcement">
-            <h4>Alliance Fleet</h4>
-            <p>Ships reported near Theramore.</p>
-          </div>
-
-          <div class="announcement">
-            <h4>Harvest Festival</h4>
-            <p>Preparations begin tomorrow.</p>
-          </div>
-
         </section>
 
-        <section class="trending">
+        <!-- Right Panel -->
 
-          <h2>Horde Leaders</h2>
+        <aside class="right-panel">
+          <section class="announcements">
+            <h2>War Council</h2>
 
-          <div class="leader">
-            <img src="./assets/Thrall_Wei.webp" alt="">
-            <div>
-              <strong>Thrall</strong>
-              <p>Warchief</p>
+            <div class="announcement">
+              <h4>Cairne requests audience</h4>
+
+              <p>Discussion about Mulgore's defenses.</p>
             </div>
-          </div>
 
-          <div class="leader">
-            <img src="./assets/cairne.jpeg" alt="">
-            <div>
-              <strong>Cairne</strong>
-              <p>High Chieftain</p>
+            <div class="announcement">
+              <h4>Alliance Fleet</h4>
+
+              <p>Ships spotted near Theramore.</p>
             </div>
-          </div>
 
-          <div class="leader">
-            <img src="./assets/lorthemar.jpeg" alt="">
-            <div>
-              <strong>Lor'themar</strong>
-              <p>Regent Lord</p>
+            <div class="announcement">
+              <h4>Harvest Festival</h4>
+
+              <p>Preparations begin tomorrow.</p>
             </div>
-          </div>
+          </section>
 
-          <div class="leader">
-            <img src="./assets/sylvanas.jpeg" alt="">
-            <div>
-              <strong>Sylvanas</strong>
-              <p>Banshee Queen</p>
+          <section class="trending">
+            <h2>Horde Leaders</h2>
+
+            <div class="leader">
+              <img src="assets/thrall.png" />
+
+              <div>
+                <strong>Thrall</strong>
+
+                <p>Warchief</p>
+              </div>
             </div>
-          </div>
 
-          <div class="leader">
-            <img src="./assets/jaina.jpeg" alt="">
-            <div>
-              <strong>Jaina</strong>
-              <p>Diplomatic Contact</p>
+            <div class="leader">
+              <img src="assets/cairne.png" />
+
+              <div>
+                <strong>Cairne</strong>
+
+                <p>High Chieftain</p>
+              </div>
             </div>
-          </div>
 
-        </section>
+            <div class="leader">
+              <img src="assets/lorthemar.png" />
 
-      </aside>
+              <div>
+                <strong>Lor'themar</strong>
 
-    </main>
+                <p>Regent Lord</p>
+              </div>
+            </div>
 
-</div>
-</body>
+            <div class="leader">
+              <img src="assets/sylvanas.png" />
+
+              <div>
+                <strong>Sylvanas</strong>
+
+                <p>Banshee Queen</p>
+              </div>
+            </div>
+
+            <div class="leader">
+              <img src="assets/jaina.png" />
+
+              <div>
+                <strong>Jaina</strong>
+
+                <p>Diplomatic Contact</p>
+              </div>
+            </div>
+          </section>
+        </aside>
+      </main>
+    </div>
+  </body>
 </html>
